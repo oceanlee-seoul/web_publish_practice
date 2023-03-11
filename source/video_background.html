@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style></style>
+    <title>비디오 백그라운드 섹션 (Flex 레이아웃)</title>
+    <link rel="stylesheet" href="/style/video_background_style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="hero">
+        <div class="heading">
+          <h1><span>CSS Container</span> Queries</h1>
+          <p>
+            Container queries enable you to apply styles to an element based on
+            the size of the element's container. If, for example, a container
+            has less space available in the surrounding context, you can hide
+            certain elements or use smaller fonts.
+          </p>
+        </div>
+        <video
+          src="/images/video.mp4"
+          autoplay
+          muted
+          loop
+          poster="images/img01.png"
+        ></video>
+      </section>
+      <section class="content">
+        <div class="inner">
+          <div>
+            <h2>Using container queries</h2>
+            <p>
+              To use container queries, you need to declare a containment
+              context on an element so that the browser knows you might want to
+              query the dimensions of this container later.
+            </p>
+          </div>
+          <div>
+            <h2>Naming containment contexts</h2>
+            <p>
+              In the previous section, a container query applied styles based on
+              the nearest ancestor with a containment context. It's possible to
+              give a containment context a name using the container-name
+              property.
+            </p>
+          </div>
+          <div>
+            <h2>Shorthand container syntax</h2>
+            <p>
+              When applying styles to a container using container queries, you
+              can use container query length units. These units specify a length
+              relative to the dimensions of a query container.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
