@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>인접선택자, 형제선택자 연습</title>
+    <style>
+      @import url("https://kit.fontawesome.com/25567bc514.css");
+      input[id="trigger"] {
+        display: none;
+      }
+      label[for="trigger"] {
+        width: 30px;
+        height: 20px;
+        display: block;
+        position: relative;
+        cursor: pointer;
+      }
+      label[for="trigger"] span {
+        display: block;
+        height: 2px;
+        background-color: black;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        transition: 0.2s;
+      }
+      label[for="trigger"] span:nth-child(1) {
+        top: 0;
+      }
+      label[for="trigger"] span:nth-child(2) {
+        top: 50%;
+      }
+      label[for="trigger"] span:nth-child(3) {
+        top: 100%;
+      }
+
+      input[id="trigger"]:checked + label span:nth-child(1) {
+        top: 50%;
+        transform: rotate(45deg);
+      }
+      input[id="trigger"]:checked + label span:nth-child(2) {
+        opacity: 0;
+      }
+      input[id="trigger"]:checked + label span:nth-child(3) {
+        top: 50%;
+        transform: rotate(-45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <input type="checkbox" id="trigger" />
+      <label for="trigger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <div class="sidebar"></div>
+    </div>
+  </body>
+</html>

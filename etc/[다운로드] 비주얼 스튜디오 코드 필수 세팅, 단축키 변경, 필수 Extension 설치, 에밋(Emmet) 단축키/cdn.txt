@@ -1,0 +1,4 @@
+fontawesome
+@import url("https://kit.fontawesome.com/25567bc514.css")
+xeicon
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css")
