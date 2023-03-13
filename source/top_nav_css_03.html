@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Top Navigation Practice</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+      * {
+        box-sizing: border-box;
+      }
+       {
+      }
+      nav .logo a {
+        width: 200px;
+        height: 100px;
+        position: relative;
+        display: flex;
+        overflow: hidden;
+      }
+      nav .logo a img {
+        position: absolute;
+        top: -15px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      body {
+        font-family: "Noto Sans", sans-serif;
+        margin: 0;
+        color: black;
+        line-height: 15px;
+        background-color: white;
+        font-weight: 300;
+      }
+
+      a {
+        text-decoration: none;
+        color: #222;
+      }
+
+      /* Three type Header Navigation */
+      header {
+        font-weight: normal;
+        background-color: white;
+        box-shadow: 5px 0 15px rgba(0, 0, 0, 0.15);
+      }
+      nav {
+        /* border: 1px solid red; */
+        width: 1100px;
+        margin: auto;
+        overflow: hidden;
+      }
+      nav > div {
+        /* border: 1px solid black; */
+        height: 70px;
+        line-height: 70px;
+      }
+      .logo {
+        float: right;
+      }
+      .gnb {
+        float: left;
+        margin-right: 10px;
+      }
+      .gnb a {
+        margin: 10px;
+      }
+      .lnb {
+      }
+      .lnb a {
+        background-color: orange;
+        color: white;
+        padding: 3px 10px;
+        border-radius: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <div class="logo">
+            <a href="none"><img src="/images/IBM_ORANGE.png" /></a>
+          </div>
+          <div class="gnb">
+            <a href="#none">회사연혁</a>
+            <a href="#none">기업정신</a>
+            <a href="#none">회사정보</a>
+            <a href="#none">회사위치</a>
+            <a href="#none">상품목록</a>
+          </div>
+          <div class="lnb">
+            <a href="none">로그인</a>
+          </div>
+        </nav>
+      </header>
+    </div>
+  </body>
+</html>
