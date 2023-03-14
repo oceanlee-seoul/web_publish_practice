@@ -1,0 +1,45 @@
+/* CSS 방식 드롭다운 네비게이션 */
+
+/* .item:hover .item-desc {
+  display: block;
+} */
+
+/* Show Hide Function : Slide Down */
+
+/* .item-desc {
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  transition: 0.5s;
+}
+
+.item:hover .item-desc {
+  height: 200px;
+  padding: 5px 15px;
+} */
+
+/* .item {
+  position: relative;
+}
+.item-desc {
+  position: absolute;
+  display: none;
+  background-color: white;
+}
+
+.item:hover .item-desc {
+  display: block;
+} */
+
+.item-desc {
+  display: none;
+}
+
+.item {
+  position: relative;
+}
+.item-desc {
+  position: absolute;
+  display: none;
+  background-color: white;
+}

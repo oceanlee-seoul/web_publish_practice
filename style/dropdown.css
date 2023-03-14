@@ -29,3 +29,92 @@ h6 {
 }
 
 /* Dropdown Navigation */
+
+.program {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center;
+  height: 100vh; */
+}
+.program .inner {
+  width: 1150px;
+  /* margin: auto; */
+}
+
+.program .inner h1 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+.items {
+  display: flex;
+  gap: 40px;
+}
+.item {
+  flex: 1;
+}
+
+.item-list {
+  background-color: navy;
+  text-align: center;
+  color: white;
+  padding: 25px;
+}
+
+.item:nth-child(1) .item-list {
+  background-color: #195fab;
+}
+.item:nth-child(2) .item-list {
+  background-color: #5049a9;
+}
+.item:nth-child(3) .item-list {
+  background-color: #8c66c1;
+}
+
+.item-list h4 {
+  font-weight: 300;
+  line-height: 30px;
+}
+.btns {
+}
+.btn {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  margin: 3px;
+  display: inline-block;
+  width: 80px;
+}
+.btn.download {
+  width: 200px;
+}
+
+.item-desc {
+  padding: 5px 15px;
+  font-size: 14px;
+}
+.item-desc p {
+  text-align: center;
+}
+
+.item:nth-child(1) .item-desc {
+  border: 3px solid #195fab;
+}
+.item:nth-child(2) .item-desc {
+  border: 3px solid #5049a9;
+}
+.item:nth-child(3) .item-desc {
+  border: 3px solid #8c66c1;
+}
+
+.item-desc ul {
+  list-style: none;
+  margin: 0;
+  padding: 5px;
+  margin-bottom: 15px;
+  background-color: #eee;
+}
+.item-desc ul li:before {
+  content: "- ";
+}
