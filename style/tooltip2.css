@@ -1,0 +1,60 @@
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+
+body {
+  margin: 0;
+  background-color: black;
+  line-height: 1.6em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sns {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sns a {
+  color: #fff;
+  margin: 5px;
+  position: relative;
+}
+
+.sns a:before {
+  content: attr(data-text);
+  position: absolute;
+  border-radius: 2px;
+  background-color: #777;
+  color: black;
+  font-size: 10px;
+  top: -15px;
+  left: 50%;
+  width: 50px;
+  height: 15px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 15px;
+}
+
+.sns a:after {
+  content: "";
+  background-color: #777;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  top: -9.5px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.sns a:before,
+.sns a:after {
+  opacity: 0;
+}
+
+.sns a:hover:before,
+.sns a:hover:after {
+  opacity: 1;
+}
