@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+body {
+  font-family: "Anton", sans-serif;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.btn {
+  color: transparent;
+  text-decoration: none;
+  font-size: 5em;
+  -webkit-text-stroke: 1px white;
+  position: relative;
+  transition: 0.3s;
+}
+
+.btn::before,
+.btn::after {
+  content: attr(data-text);
+  -webkit-text-stroke: 1px transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+  opacity: 0;
+}
+.btn:before {
+  color: royalblue;
+}
+.btn::after {
+  color: orange;
+}
+
+/* Hover Effect */
+
+.btn:hover {
+  color: white;
+  -webkit-text-stroke: 0px;
+}
+.btn:hover:before {
+  opacity: 1;
+  transform: translate(5px, -5px);
+}
+
+.btn:hover:after {
+  opacity: 1;
+  transform: translate(10px, -10px);
+}

@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tooltip {
+  position: relative;
+}
+.tooltip i {
+  font-size: 50px;
+  color: dodgerblue;
+}
+.tooltip span {
+  position: absolute;
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 250px;
+  border-radius: 3px;
+  padding: 5px;
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s;
+}
+
+.tooltip span:after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  bottom: -7.5px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+/* Hover function */
+
+.tooltip:hover span {
+  opacity: 1;
+  visibility: visible;
+}
