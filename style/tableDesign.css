@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+
+body {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  color: #333;
+  line-height: 1.6em;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+/* Table : Member */
+
+.member {
+  background-color: white;
+  color: #777777;
+  width: 900px;
+  border-collapse: collapse;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.178);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.member tr {
+  border-bottom: 1px solid #eee;
+  transition: 0.3s;
+}
+.member tr:last-child {
+  border: none;
+}
+.member tr:nth-child(odd) {
+  background-color: #eee;
+}
+.member tr:hover {
+  background-color: rgba(121, 155, 255, 0.407);
+}
+.member th,
+.member td {
+  padding: 12px;
+  text-align: center;
+}
+.member tr th {
+  background-color: dodgerblue;
+  color: white;
+}
+.member tr td:last-child {
+  color: crimson;
+}
+
+.member caption {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.member th:first-child {
+  border-top-left-radius: 5px;
+}
+.member th:last-child {
+  border-top-right-radius: 5px;
+}
