@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 0;
+}
+
+.heading {
+  font-family: "GmarketSansMedium";
+  font-size: 50px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.heading span {
+  color: deeppink;
+}
+
+/* Shopping Mall UI Items */
+
+.items-inner {
+  width: 1350px;
+  margin: auto;
+}
+
+.items-inner h2 {
+  margin-left: 10px;
+}
+.items {
+  display: flex;
+}
+
+.item {
+  border: 1px solid red;
+  height: 400px;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.item:last-child {
+  margin-right: 0;
+}
