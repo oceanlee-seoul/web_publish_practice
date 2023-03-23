@@ -2,6 +2,77 @@
 
 body {
   font-family: "PT Serif", serif;
+  margin: 0;
+  font-size: 15px;
+  color: #222;
+  line-height: 1.5em;
+  font-weight: 300;
+  box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: #222;
+}
 
+/* Card UI */
+
+section {
+  height: 100vh;
+  position: relative;
+}
+
+.inner {
+  width: 1300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heading {
+  text-align: center;
+  font-size: 40px;
+  font-weight: normal;
+  position: relative;
+  padding-bottom: 35px;
+}
+.heading::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100px;
+  background-color: crimson;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.items {
+  text-align: center;
+}
+
+.item {
+  width: 400px;
+  height: 500px;
+  display: inline-block;
+  margin: 5px;
+  background-color: #f4f4f4;
+}
+
+.photo {
+  width: 350px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+}
+
+.user img {
+  width: 40px;
+  border-radius: 50%;
+}
