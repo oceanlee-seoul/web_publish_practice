@@ -1,0 +1,197 @@
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: url(/images/background.png);
+  color: #333;
+  font-size: 15px;
+  line-height: 1.6em;
+  margin: 0;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Profile Card Dark Mode */
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+.profile {
+  width: 320px;
+  padding: 50px 30px;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.513);
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+}
+
+.face {
+  width: 120px;
+  height: 120px;
+  display: inline-block;
+  position: relative;
+}
+.face img {
+  width: 120px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.252);
+}
+.face i {
+  position: absolute;
+  right: 7px;
+  bottom: 7px;
+  font-size: 20px;
+  background-color: crimson;
+  border-radius: 50%;
+  color: white;
+}
+
+.profile h1 {
+  font-size: 26px;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+.profile h1 span {
+  display: block;
+  font-size: 14px;
+  color: #bbb;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.profile p {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.profile p span {
+  display: block;
+  color: royalblue;
+}
+.view-portfolio {
+  background-color: crimson;
+  color: white;
+  padding: 5px;
+  border-radius: 30px;
+  text-transform: capitalize;
+  display: inline-block;
+  width: 180px;
+  margin-bottom: 30px;
+}
+
+/* SNS */
+
+.sns {
+  border-top: 1px solid rgba(0, 0, 0, 0.19);
+  padding-top: 30px;
+}
+.sns div {
+  display: inline-block;
+  width: 31%;
+}
+
+.sns div i {
+  color: white;
+  width: 70px;
+  height: 70px;
+  font-size: 2.5em;
+  line-height: 70px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.322);
+}
+.sns div span {
+  font-size: 13px;
+  color: #bbb;
+}
+.sns div span big {
+  display: block;
+  color: #333;
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.sns div:nth-child(1) i {
+  background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+}
+.sns div:nth-child(2) i {
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+.sns div:nth-child(3) i {
+  background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+}
+
+/* Top Buttons */
+
+.btn-mode,
+.like-more {
+  font-size: 18px;
+}
+
+.btn-mode {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+.btn-mode::before {
+  content: "\eb0f";
+  font-family: xeicon;
+}
+.like-more {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.btn-like {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+.btn-like::before {
+  content: "\ea11";
+  font-family: xeicon;
+}
+.btn-more {
+  cursor: pointer;
+}
+
+/* Dark Mode  */
+
+.profile.dark {
+  background-color: #323650;
+}
+
+.profile.dark .btn-mode,
+.profile.dark .like-more {
+  color: #fff;
+}
+
+.profile.dark h1 {
+  color: white;
+}
+
+.profile.dark p {
+  color: white;
+}
+.profile.dark .sns {
+  border-top: 1px solid #555;
+}
+.profile.dark big {
+  color: white;
+}

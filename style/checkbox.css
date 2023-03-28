@@ -1,0 +1,214 @@
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.6em;
+  margin: 0;
+  background: url(/images/checkboxBackground.jpeg);
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  margin-top: 0;
+}
+
+input,
+button {
+  outline: none;
+}
+
+/* Custom CheckBox & Radio Login Form */
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* 자식 요소 중앙 정렬을 위해서 body의 높이값이 필요 */
+}
+
+.login {
+  width: 430px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 50px;
+  box-sizing: border-box;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.157);
+}
+
+.login h1 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 50px;
+}
+
+.login .field {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  transition: 0.2s;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: #aaa;
+  transition: 0.2s;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-bottom: 1px solid #999;
+}
+
+input[type="email"]:focus::placeholder,
+input[type="password"]:focus::placeholder {
+  opacity: 0;
+}
+
+.save-info {
+  margin: 30px 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  /* overflow: hidden; */
+}
+.save-info label {
+  /* float: left; */
+}
+.save-info a {
+  /* float: right; */
+}
+
+.event-info {
+  text-align: center;
+}
+.event-info label {
+  display: inline-block;
+  margin: 5px;
+}
+
+.login input[type="button"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  font-size: 17px;
+  margin: 15px 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.157);
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  color: #fff;
+}
+
+.sns-info {
+  text-align: center;
+  margin: 25px;
+}
+
+.sns {
+  margin: 10px 0;
+}
+.sns a i {
+  font-size: 26px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 48px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.157);
+  color: white;
+  margin: 5px;
+  transition: 1s;
+}
+.sns a:nth-child(1) i {
+  background-color: #ff5700;
+}
+.sns a:nth-child(2) i {
+  background-color: #1877f2;
+}
+.sns a:nth-child(3) i {
+  background-color: #09b83e;
+}
+.sns a:nth-child(4) i {
+  background-color: #fffc00;
+}
+
+.sns a:hover i {
+  transform: rotateY(360deg);
+}
+
+.signup-info {
+  text-align: center;
+}
+
+.signup-info a {
+  font-weight: 500;
+}
+.signup-info a:hover {
+  text-decoration: underline;
+}
+.signup-info span {
+  display: block;
+}
+
+/* Custom Checkbox & Radio */
+
+input[id="save-email"],
+input[name="event"] {
+  display: none;
+}
+
+input[id="save-email"] + em {
+  border: 1px solid black;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  margin-right: 5px;
+  background: url(/images/checked.png) no-repeat;
+  background-position: left;
+  transform: translateY(5px);
+}
+
+input[id="save-email"]:checked + em {
+  background-position: center;
+}
+
+input[name="event"] + em {
+  border: 1px solid black;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  margin-right: 5px;
+  background: url(/images/checked.png) no-repeat;
+  background-position: left;
+  vertical-align: middle;
+}
+
+input[name="event"]:checked + em {
+  background-position: center;
+}
