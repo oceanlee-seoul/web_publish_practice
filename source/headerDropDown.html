@@ -90,6 +90,57 @@
                 </div>
               </li>
             </ul>
+            <div class="sitemap-outer">
+              <div class="sitemap">
+                <div>
+                  <b>Guided Lessons</b>
+                  <a href="#none">Progress Tracker</a>
+                  <a href="#none">Classroom Mode</a>
+                  <a href="#none">Skills Progression</a>
+                </div>
+                <div>
+                  <b>Learning Library</b>
+                  <a href="#none">Worksheets</a>
+                  <a href="#none">Games</a>
+                  <a href="#none">Workbooks</a>
+                  <a href="#none">Activites</a>
+                  <a href="#none">Songs</a>
+                  <a href="#none">Stories</a>
+                  <a href="#none">Exercises</a>
+                </div>
+                <div>
+                  <b>Teaching Tools</b>
+                  <a href="#none">Lesson Plans</a>
+                  <a href="#none">Worksheet Generator</a>
+                  <a href="#none">Common Core Resources</a>
+                  <a href="#none">More Teaching Tools</a>
+                </div>
+                <div>
+                  <b>Schools</b>
+                  <a href="#none">Get a Quote</a>
+                  <a href="#none">Buy School License</a>
+                </div>
+                <div>
+                  <b>Support</b>
+                  <a href="#none">Pricing</a>
+                  <a href="#none">Give Gift</a>
+                  <a href="#none">Redeem Gift</a>
+                  <a href="#none">Schools</a>
+                  <a href="#none">FAQs</a>
+                  <a href="#none">Tell us what you think</a>
+                  <a href="#none">Terms of Service</a>
+                </div>
+                <div>
+                  <b>About us</b>
+                  <a href="#none">Company</a>
+                  <a href="#none">Reviews</a>
+                  <a href="#none">Blogs</a>
+                  <a href="#none">Press</a>
+                  <a href="#none">Site Map</a>
+                  <a href="#none">Contact Us</a>
+                </div>
+              </div>
+            </div>
           </nav>
         </div>
       </header>
@@ -98,6 +149,13 @@
     <script>
       $(".close-banner").click(function () {
         $(".banner-outer").slideUp();
+      });
+
+      $(".trigger").click(function () {
+        $(this).toggleClass("active");
+        $(".gnb li:last-child").toggleClass("active");
+        $(".sitemap-outer").fadeToggle();
+        // $(".sitemap-outer").slideToggle();
       });
     </script>
   </body>

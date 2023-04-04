@@ -81,6 +81,7 @@ a {
 nav {
   width: 1450px;
   margin: auto;
+  position: relative;
 }
 .gnb {
   margin: 0;
@@ -103,7 +104,12 @@ nav {
 }
 .gnb li:last-child {
   width: 50px;
-  background-color: red;
+  background-color: #12359d;
+  position: relative;
+  transition: 0.3s;
+}
+.gnb li:last-child.active {
+  background-color: white;
 }
 .gnb li > a {
   color: white;
@@ -155,6 +161,81 @@ nav {
   opacity: 1;
   pointer-events: all;
   /* visibility: visible; */
+}
+
+/* Trigger */
+.trigger {
+  width: 25px;
+  height: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.trigger span {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  transition: 0.3s;
+}
+.trigger span:nth-child(1) {
+  top: 0%;
+}
+.trigger span:nth-child(2) {
+  top: 50%;
+}
+.trigger span:nth-child(3) {
+  top: 100%;
+}
+
+.trigger.active span {
+  background-color: black;
+}
+.trigger.active span:nth-child(1) {
+  top: 50%;
+  transform: rotate(45deg);
+}
+.trigger.active span:nth-child(2) {
+  opacity: 0;
+}
+.trigger.active span:nth-child(3) {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+
+/* Sitemap */
+
+.sitemap-outer {
+  background-color: white;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  padding: 30px 15px;
+  display: none;
+}
+.sitemap {
+  display: flex;
+}
+.sitemap div {
+  flex: 1;
+  font-size: 14px;
+  line-height: 2em;
+}
+.sitemap div b {
+}
+.sitemap div a {
+  display: block;
+  /* display: list-item;
+  list-style: none;
+  padding: 0; */
+}
+
+.sitemap div a::before {
+  content: "- ";
+}
+.sitemap div a:hover {
+  text-decoration: underline;
 }
 
 /* Section */
