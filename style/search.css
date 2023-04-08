@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+  line-height: 1.6em;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Header */
+
+header {
+  background-color: #eee;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  width: 100%;
+}
+.logo {
+}
+.search {
+}
+
+section {
+  height: 900px;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section h1 {
+  font-size: 3em;
+}
+
+/* Search CSS */
+
+.search {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px 50px 50px 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.196);
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s;
+}
+.search.active {
+  width: 400px;
+}
+
+.clear {
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 52px;
+  font-size: 26px;
+  cursor: pointer;
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: 0;
+}
+
+.input-frame {
+  position: absolute;
+  top: 11px;
+  left: 48px;
+  width: 300px;
+}
+
+.input-frame input[type="text"] {
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 18px;
+}
+
+.input-frame input[type="text"]::placeholder {
+  transition: 0.5s;
+}
+
+.input-frame input[type="text"]:focus::placeholder {
+  opacity: 0;
+}

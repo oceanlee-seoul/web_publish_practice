@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.6em;
+  background-color: #fff;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+header {
+  height: 100px;
+  background-color: skyblue;
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+  line-height: 100px;
+  text-transform: uppercase;
+}
+
+section {
+  height: 500px;
+  background-color: white;
+  font-size: 2em;
+  line-height: 500px;
+  text-align: center;
+  display: none;
+}
+
+section:nth-of-type(odd) {
+  background-color: #ddd;
+}
+
+/* footer */
+
+footer {
+  background-color: #444;
+  color: #999;
+  padding: 30px 0;
+}
+
+.footer-inner {
+  width: 1280px;
+  margin: auto;
+}
+.footer-inner:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.copyright {
+  float: left;
+}
+
+.family {
+  float: right;
+  padding-top: 40px;
+}
+
+.policy {
+}
+.policy a {
+  color: white;
+  font-weight: 500;
+}
+.policy a:first-child {
+  color: yellowgreen;
+}
+.policy a:hover {
+  text-decoration: underline;
+}
+
+.info p:last-child {
+  text-transform: uppercase;
+}
+
+footer em {
+  font-style: normal;
+  color: #999;
+  margin: 7px;
+  font-size: 10px;
+  display: inline-block;
+  transform: translateY(-2.5px);
+}
+
+.info p {
+  margin: 5px 0;
+}
+
+/* Family Site */
+.dropdown {
+  width: 200px;
+  color: #303135;
+  border: 1px solid #777;
+  cursor: pointer;
+  padding: 5px;
+  position: relative;
+  background-color: #333;
+}
+.title {
+  color: #fff;
+  text-transform: uppercase;
+}
+.title:after {
+  content: "\f107";
+  font-family: fontawesome;
+  position: absolute;
+  right: 5px;
+  transition: 0.2s;
+}
+.title.active:after {
+  transform: rotate(180deg);
+}
+
+.sub-navi {
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  bottom: 100%;
+  width: 100%;
+  display: none;
+}
+.sub-navi li {
+}
+.sub-navi li a {
+  color: white;
+  display: block;
+  padding: 7px;
+  background-color: #777;
+  border-bottom: 1px solid #aaa;
+}
+.sub-navi li:last-child a {
+  border: none;
+}
+
+.sub-navi li a:hover {
+  background-color: #333;
+}
