@@ -1,0 +1,60 @@
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  margin: 0;
+  background-color: #222;
+  color: gainsboro;
+  line-height: 1.6em;
+}
+
+a {
+  text-decoration: none;
+  color: gainsboro;
+}
+
+.faq .inner {
+  width: 700px;
+  margin: auto;
+}
+
+.faq .inner h1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 2em;
+  margin-bottom: 50px;
+}
+
+.faq-title {
+  background-color: #303030;
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 3px;
+}
+
+.faq-title:hover,
+.faq-title.active {
+  background-color: #34495e;
+}
+
+.faq-title i {
+  float: right;
+  font-size: 20px;
+  line-height: 25px;
+  transition: 0.3s;
+}
+.faq-title.active i {
+  transform: rotate(45deg);
+}
+.faq-content {
+  background-color: #303030;
+  padding: 10px;
+  margin-bottom: 5px;
+  display: none;
+}

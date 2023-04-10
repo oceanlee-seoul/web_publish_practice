@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@300;400;500;600;700&display=swap");
+
+body {
+  font-size: 15px;
+  margin: 0;
+  line-height: 1.5em;
+  color: #222;
+  background: url(/images/blank_background.jpg) no-repeat center center;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.512);
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+.login {
+  position: relative;
+  text-align: center;
+  width: 400px;
+  padding: 50px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.19);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  color: white;
+  z-index: 2;
+}
+
+.login img {
+  width: 100px;
+}
+.login h1 {
+  font-size: 2em;
+}
+
+.input-field {
+  position: relative;
+}
+.input-field input {
+  width: 100%;
+  padding: 10px 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #eee;
+  margin: 20px 0;
+  color: white;
+  font-size: 18px;
+}
+.input-field span {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.button-field input {
+  background-color: yellowgreen;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.add-info {
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.add-info label {
+  float: left;
+  cursor: pointer;
+}
+
+.add-info a {
+  float: right;
+  color: #ccc;
+}
+.add-info a:hover {
+  text-decoration: underline;
+}
+/* Input Field */
+.input-field input:focus + span,
+.input-field input:valid + span {
+  top: 0;
+  font-size: 12px;
+  color: royalblue;
+  font-weight: bold;
+}
+.input-field input:focus + span.warning {
+  color: crimson !important;
+  animation: warning 0.3s ease-in-out 2;
+}
+@keyframes warning {
+  0% {
+    transform: translateX(-5px);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(-5px);
+  }
+}
+
+/* Custom Checkbox */
+
+#save-email {
+  display: none;
+}
+#save-email + em {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+  transform: translateY(4px);
+  background: url(/images/blank_icon-checkbox.png);
+  background-position: left;
+  z-index: 3;
+}
+
+#save-email:checked + em {
+  background-position: right;
+}
+#save-email:checked + em + span {
+  color: #1bbe93;
+}

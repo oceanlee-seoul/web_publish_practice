@@ -8,5 +8,99 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <title>Netflix FAQ</title>
   </head>
-  <body></body>
+  <body>
+    <section class="faq">
+      <div class="inner">
+        <h1>Frequently Asked Questions</h1>
+        <article class="accordion">
+          <div class="faq-title active">
+            What is Netflix?
+            <i class="xi-plus-thin"></i>
+          </div>
+          <div class="faq-content">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil,
+            quae vitae magni similique sequi ipsum, eius libero fugiat deserunt
+            quos, expedita rerum consectetur. Debitis adipisci eligendi nemo!
+            Natus, incidunt autem! Lorem ipsum dolor sit, amet consectetur
+            <br /><br />
+            adipisicing elit. Incidunt, quae fugit! Illum fugiat earum totam,
+            nobis neque velit, saepe ut deleniti debitis, corrupti minima
+            nostrum consequuntur est culpa. Cupiditate, accusantium.
+          </div>
+          <div class="faq-title">
+            How much does Netflix cost?
+            <i class="xi-plus-thin"></i>
+          </div>
+          <div class="faq-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima enim
+            inventore, dicta aliquam at ex animi ab magni rem. Ex alias ea
+            quasi, consequuntur dolorum provident veritatis quibusdam cumque
+            dolores culpa, qui sit eligendi repellat velit porro quas, a vel
+            assumenda numquam. Corporis iusto placeat nemo, sapiente illo sit!
+            Laborum possimus, eveniet delectus quidem nostrum quam modi nesciunt
+            eius voluptate.
+          </div>
+          <div class="faq-title">
+            Where can I watch?
+            <i class="xi-plus-thin"></i>
+          </div>
+          <div class="faq-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+            ea et veniam eligendi non dolor voluptas nisi earum suscipit, sint
+            impedit error molestias harum fuga, animi quod. Dignissimos vero
+            ullam totam, possimus aliquid assumenda facilis nihil laudantium
+            modi, consectetur fuga mollitia at maiores veritatis corporis
+            quidem, voluptatum porro. Voluptatum, ea?
+          </div>
+          <div class="faq-title">
+            How do I cancel?
+            <i class="xi-plus-thin"></i>
+          </div>
+          <div class="faq-content">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            animi eaque atque omnis ut nemo laudantium non recusandae! Doloribus
+            velit saepe adipisci deleniti. Sit vitae earum eius quidem aliquam
+            fugit, repudiandae animi eos adipisci officia nostrum totam deserunt
+            accusamus dicta?
+          </div>
+          <div class="faq-title">
+            What can I watch on Netflix?
+            <i class="xi-plus-thin"></i>
+          </div>
+          <div class="faq-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et commodi
+            reprehenderit adipisci nobis tempore consectetur placeat, eligendi
+            tenetur eum. Quidem mollitia, rem ut dolorum eos ab maiores
+            aspernatur aliquid autem sapiente ratione, obcaecati quisquam veniam
+            hic ipsum recusandae! Amet perferendis excepturi nostrum maiores
+            iure eaque voluptate consectetur natus. Ipsam esse minima, deleniti
+            aut autem sequi accusamus magnam accusantium quam nulla, vero itaque
+            consequuntur at voluptatum tenetur doloremque distinctio explicabo,
+            recusandae doloribus ipsa odio officiis repellat. Iure velit quod
+            similique rerum.
+          </div>
+          <div class="faq-title">
+            Is Netflix good for kids?
+            <i class="xi-plus-thin"></i>
+          </div>
+          <div class="faq-content">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio
+            libero quidem architecto nemo! Excepturi numquam ea consequatur
+            possimus cupiditate. Accusantium vero laborum similique aperiam ea
+            nihil adipisci ullam vitae illum?
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <script>
+      $(".faq-content").eq(0).show();
+      $(".faq-title").click(function () {
+        $(this).addClass("active");
+        $(this).siblings(".faq-title").removeClass("active");
+        $(this).next().slideDown();
+        $(this).siblings(".faq-title").next().slideUp();
+      });
+    </script>
+  </body>
 </html>
