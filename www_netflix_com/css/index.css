@@ -1,0 +1,137 @@
+/* Google Wep Font - Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap");
+/* xeicon */
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+
+/* Defaul Css */
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: #fff;
+  margin: 0;
+  line-height: 1.6em;
+  font-size: 26px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Header */
+
+header {
+  overflow: hidden;
+  padding: 35px 55px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+.logo {
+  float: left;
+}
+.logo img {
+  width: 170px;
+}
+.signin {
+  float: right;
+}
+.signin button {
+  background-color: crimson;
+  border: none;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-style: 18px;
+}
+
+/* Section : Welcome */
+
+.welcome {
+  height: 80vh;
+  background: url(/www_netflix_com/images/top_background.jpg) no-repeat center
+    center;
+  background-size: cover;
+  position: relative;
+}
+
+.welcome::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.677);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.heading h1 {
+  font-size: 64px;
+  line-height: 1.2em;
+  margin: 0;
+}
+.heading h5 {
+  font-weight: normal;
+  margin: 0;
+  font-size: 20px;
+}
+.heading p {
+  font-size: 20px;
+}
+
+.getstarted {
+  position: relative;
+  display: inline-block;
+}
+.getstarted input[type="email"] {
+  width: 450px;
+  height: 70px;
+  border: 2px solid rgba(255, 255, 255, 0.492);
+  background-color: rgba(0, 0, 0, 0.587);
+  border-radius: 5px;
+  padding: 20px 10px;
+  margin-right: 10px;
+  color: white;
+  font-size: 18px;
+  vertical-align: middle;
+}
+.getstarted input[type="email"] + span {
+  color: #999;
+  font-size: 16px;
+  position: absolute;
+  left: 11px;
+  top: 13px;
+  transition: 0.3s;
+  pointer-events: none;
+}
+.getstarted input[type="email"]:focus + span,
+.getstarted input[type="email"]:valid + span {
+  font-weight: bold;
+  transform: translateY(-17px);
+  font-size: 12px;
+}
+
+.getstarted button {
+  width: 200px;
+  height: 70px;
+  color: white;
+  background-color: crimson;
+  border: none;
+  border-radius: 5px;
+  font-size: 26px;
+  padding: 0 10px;
+  cursor: pointer;
+  vertical-align: middle;
+}

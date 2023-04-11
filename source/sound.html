@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/sound.css" />
+    <script
+      src="https://kit.fontawesome.com/25567bc514.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>사운드 재생 제어하기</title>
+  </head>
+  <body>
+    <h1>자바스크립트 사운드 재생 제어하기</h1>
+    <div class="buttons">
+      <button id="btn-play-pause">Play <i class="fa fa-play"></i></button>
+      <button id="btn-stop">Stop <i class="fa fa-stop"></i></button>
+    </div>
+    <audio
+      id="audio"
+      src="/images/mountain-sky-bgm.mp3"
+      type="audio/mpeg"
+    ></audio>
+
+    <div class="audio-status">
+      <span style="height: 40%"></span>
+      <span style="height: 100%"></span>
+      <span style="height: 70%"></span>
+      <span style="height: 20%"></span>
+      <span style="height: 60%"></span>
+    </div>
+
+    <script>
+      let audio = document.getElementById("audio");
+      let btnPlayPause = document.getElementById("btn-play-pause");
+      let btnStop = document.getElementById("btn-stop");
+      let audioStatus = document.querySelector(".audio-status");
+      let checkStatus = 0;
+
+      const playPause = function () {
+        if (checkStatus === 0) {
+          checkStatus = 1;
+          audio.play();
+          btnPlayPause.innerHTML = 'Pause <i class="fa fa-pause"></i>';
+          audioStatus.classList.add("active");
+        } else {
+          checkStatus = 0;
+          btnPlayPause.innerHTML = 'Play <i class="fa fa-play"></i>';
+          audioStatus.classList.remove("active");
+          audio.pause();
+        }
+      };
+      const stop = function () {
+        checkStatus = 0;
+        audio.pause();
+        audio.currentTime = 0;
+        btnPlayPause.innerHTML = 'Play <i class="fa fa-play"></i>';
+        audioStatus.classList.remove("active");
+      };
+
+      btnPlayPause.addEventListener("click", playPause);
+      btnStop.addEventListener("click", stop);
+    </script>
+  </body>
+</html>
