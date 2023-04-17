@@ -15,9 +15,17 @@ body {
   line-height: 1.6em;
   font-size: 26px;
 }
+body.active {
+  overflow: hidden;
+}
 a {
   text-decoration: none;
   color: #fff;
+}
+
+section {
+  border-bottom: 10px solid #333;
+  position: relative;
 }
 
 /* Header */
@@ -134,4 +142,214 @@ header {
   padding: 0 10px;
   cursor: pointer;
   vertical-align: middle;
+}
+
+/* Section : Enjoy, Download, Watch, Create */
+.enjoy,
+.download,
+.watch,
+.create {
+  height: 500px;
+}
+
+.inner {
+  width: 1150px;
+  margin: auto;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.inner > div {
+  float: left;
+}
+
+.desc {
+  padding-top: 40px;
+  width: 60%;
+}
+.desc h2 {
+  font-size: 50px;
+  line-height: 1.2em;
+}
+.desc p {
+}
+.preview {
+  text-align: center;
+  width: 40%;
+}
+.preview img {
+  height: 350px;
+}
+
+/* Section : FAQ */
+.faq {
+  padding: 80px 0;
+}
+
+.faq-inner {
+  width: 850px;
+  margin: auto;
+}
+
+.faq-inner h1 {
+  text-align: center;
+  font-size: 50px;
+}
+input[name="faq-item"] {
+  display: none;
+}
+input[name="faq-item"] + label {
+  display: block;
+  background-color: #303030;
+  padding: 15px;
+  cursor: pointer;
+  margin-bottom: 3px;
+}
+.faq-content {
+  background-color: #303030;
+  padding: 15px;
+  margin-bottom: 10px;
+  /* display: none; */
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+  transition: max-height 0.3s;
+}
+input[name="faq-item"] + label span {
+  float: right;
+  font-size: 34px;
+  padding-top: 3px;
+  transition: 0.3s;
+}
+input[name="faq-item"]:checked + label span {
+  transform: rotate(45deg);
+}
+
+aside {
+  text-align: center;
+}
+
+/* Checked Function */
+input[name="faq-item"]:checked + label + .faq-content {
+  /* display: block; */
+  max-height: 500px;
+  padding: 15px;
+}
+
+/* Footer */
+footer {
+  padding: 50px 0;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5em;
+}
+.footer-inner {
+  border: 1px solid black;
+  width: 850px;
+  margin: auto;
+}
+.sitemap {
+  border-bottom: 1px solid #777;
+  padding-bottom: 20px;
+}
+.sitemap h6 {
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.items {
+  display: inline-block;
+  width: 24%;
+  vertical-align: top;
+  line-height: 2em;
+}
+.items a {
+  color: #777;
+  display: block;
+}
+.items a:hover {
+  text-decoration: underline;
+}
+
+/* Login Modal */
+.modal-login {
+  background-color: rgba(0, 0, 0, 0.627);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: none;
+}
+.modal-login .login {
+  width: 450px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.864);
+  font-size: 15px;
+  color: #666;
+  font-weight: 300;
+  padding: 60px;
+}
+.login h1 {
+  font-size: 30px;
+  color: white;
+}
+.login input[type="text"],
+.login input[type="password"] {
+  background-color: #333;
+  padding: 20px 15px;
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  margin-bottom: 20px;
+  outline: none;
+  font-size: 18px;
+  color: white;
+}
+
+.login input[type="button"] {
+  font-size: 24px;
+  background-color: crimson;
+  color: white;
+  border: none;
+  outline: none;
+  width: 100%;
+  border-radius: 5px;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.login p a {
+  color: royalblue;
+}
+.save-info {
+  overflow: hidden;
+  margin-top: 10px;
+}
+.save-info label {
+  float: left;
+}
+.save-info a {
+  float: right;
+}
+
+.login a:hover {
+  text-decoration: underline;
+}
+
+.btn-close {
+  font-size: 40px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 30px;
 }
