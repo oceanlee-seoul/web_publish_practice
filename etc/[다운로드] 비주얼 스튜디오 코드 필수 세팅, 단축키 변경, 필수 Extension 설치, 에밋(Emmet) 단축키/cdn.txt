@@ -4,7 +4,7 @@ fontawesome
       crossorigin="anonymous"
     ></script>
 
-xeicon
+/* XEICON CDN */
 @import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css")
 
 noto sans

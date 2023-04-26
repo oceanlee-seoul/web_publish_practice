@@ -1,0 +1,95 @@
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  .logo img {
+    width: 150px;
+  }
+  header {
+    padding: 30px 20px;
+  }
+  section {
+    padding: 20px;
+  }
+  /* Section : Welcome */
+  .welcome {
+    height: 100vh;
+  }
+  .heading {
+    width: 100%;
+  }
+  .heading h1 {
+    font-size: 34px;
+  }
+
+  /* GetStarted */
+  .getstarted {
+    width: 95%;
+  }
+  .getstarted input[type="email"] {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .enjoy,
+  .download,
+  .watch,
+  .create {
+    height: auto;
+  }
+
+  .inner {
+    width: 100%;
+    position: static;
+    transform: translate(0);
+  }
+  .desc,
+  .preview {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .desc h2 {
+    font-size: 30px;
+  }
+  .preview img {
+    width: 100%;
+    height: auto;
+  }
+
+  .faq {
+    padding: 80px 20px;
+  }
+  .faq-inner {
+    width: 100%;
+  }
+  .faq-inner h1 {
+    font-size: 30px;
+    line-height: 1.3em;
+  }
+  input[name="faq-item"] + label span {
+    font-size: 20px;
+  }
+  footer {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  .footer-inner {
+    width: 100%;
+  }
+  .items {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+  /* Login Modal */
+  .login {
+    width: 100%;
+  }
+
+  /* Change Order */
+  .download .inner,
+  .create .inner {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
