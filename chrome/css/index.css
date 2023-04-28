@@ -106,6 +106,11 @@ header {
 .download {
   float: right;
   padding-top: 9.5px;
+  transform: translateX(200px);
+  transition: 0.5s;
+}
+.download.active {
+  transform: translateX(0);
 }
 .btn-download:hover {
   background-color: #174ea6;
@@ -182,4 +187,122 @@ section.welcome {
   100% {
     transform: translateY(-3px);
   }
+}
+
+/* Call Action */
+
+section.callaction {
+  height: 280px;
+  background-color: #4285f4;
+  padding-top: 90px;
+}
+.callaction-inner {
+  text-align: center;
+}
+.callaction-inner h1 {
+  color: white;
+  font-size: 42px;
+  margin-bottom: 35px;
+}
+.callaction-inner .btn-download {
+  background-color: transparent;
+  border: 2px solid white;
+}
+.callaction-inner .btn-download:hover {
+  color: black;
+  background-color: white;
+}
+
+/* Footer */
+
+footer {
+}
+.footer-inner {
+  width: 1250px;
+  margin: auto;
+}
+.sns-outer {
+  padding: 30px 0;
+  border-bottom: 1px solid #ddd;
+}
+.sns {
+  font-size: 20px;
+}
+.sns b {
+  font-weight: normal;
+  margin-right: 10px;
+}
+.sns a {
+  font-size: 26px;
+  margin-right: 10px;
+}
+
+.sitemap {
+  padding: 30px 0;
+}
+.link-items {
+  overflow: hidden;
+}
+.link-item {
+  float: left;
+  width: 20%;
+}
+.link-item-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.link-item-content {
+  line-height: 2.3em;
+}
+.link-item-content a {
+  display: block;
+  font-size: 14px;
+  color: #555;
+}
+
+.link-item-content a:hover {
+  color: black;
+}
+
+.copyright {
+  padding: 50px 0;
+  border-top: 1px solid #ddd;
+}
+.logo-footer {
+  float: left;
+  margin-right: 20px;
+  transform: translateY(-23px);
+}
+.logo-footer img {
+  width: 200px;
+}
+.policy {
+  float: left;
+}
+.policy a {
+  margin-right: 10px;
+}
+.policy a:after {
+  content: "|";
+  font-size: 14px;
+  padding-left: 10px;
+  color: #ccc;
+}
+.policy a:last-child:after {
+  display: none;
+}
+.language {
+  float: right;
+}
+.language {
+}
+.language i {
+  font-size: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.language select {
+  font-size: 16px;
+  padding: 5px;
 }
