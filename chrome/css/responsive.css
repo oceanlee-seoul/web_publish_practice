@@ -1,5 +1,8 @@
 @media (max-width: 768px) {
   /* Common CSS */
+  section {
+    padding: 0 25px !important;
+  }
   .inner {
     width: 100%;
   }
@@ -23,6 +26,21 @@
   section.feature.edit .inner .photo {
     order: 2;
   }
+  section.feature {
+    padding: 25px 0;
+  }
+  .desc {
+    padding: 0 20px;
+    padding-top: 30px;
+    margin-bottom: 50px;
+  }
+  .desc h1 {
+    font-size: 24px;
+    line-height: 1.2em;
+  }
+  .desc > img {
+    margin-bottom: 50px;
+  }
 
   /* header */
   header .btn-download {
@@ -31,7 +49,12 @@
 
   /* Welcome Section */
   .heading {
-    width: 100%;
+    width: 80%;
+  }
+
+  .heading h1 {
+    line-height: 1.5em;
+    font-size: 32px;
   }
   .download-content span {
     display: none;
@@ -45,7 +68,41 @@
 
   /* Section : CallAction */
 
+  section .callaction {
+    padding-top: 90px !important;
+  }
+  section.callaction h1 {
+    font-size: 24px;
+    padding-top: 80px;
+    font-weight: 300;
+  }
+
+  /* Sitemap */
+
+  .link-item-title {
+    border-bottom: 1px solid #ddd;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    pointer-events: all;
+  }
+  .link-item-title:after {
+    content: "\e942";
+    font-family: "xeicon";
+    float: right;
+    transition: 0.3s;
+  }
+  .link-item-title.active:after {
+    transform: rotate(180deg);
+  }
+
+  .link-item-content {
+    display: none;
+  }
+
   /* Footer */
+  footer {
+    padding: 0 20px;
+  }
   .footer-inner {
     width: 100%;
   }
@@ -58,5 +115,26 @@
   }
   .language {
     float: none;
+  }
+  .language select {
+    width: 50%;
+  }
+
+  /* Copyright */
+
+  .copyright {
+    text-align: center;
+    border: none;
+    padding: 50px 0;
+  }
+  .logo-footer {
+    width: 100%;
+  }
+  .policy {
+    margin-bottom: 30px;
+  }
+  .policy a {
+    margin: 2px;
+    font-size: 14px;
   }
 }
